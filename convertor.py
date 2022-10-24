@@ -2,14 +2,10 @@ import sys
 from exceptions import *
 from math import floor
 
-# dummy values
-"""from_choice = input("Enter: ")
-num1 = "225.85"
-to_choice = "Binary"""
-
 
 def main_convert(from_choice, to_choice, num):
 
+    # if change FROM Decimal
     if from_choice == "Decimal":
 
         # verify that the number is decimal
@@ -17,14 +13,17 @@ def main_convert(from_choice, to_choice, num):
             print("This number is not " + from_choice)
             return null
 
+        # if change TO Decimal
         if to_choice == "Decimal":
             print(num)
             return null
 
+        # if change TO Binary
         elif to_choice == "Binary":
             print(to_binary(num))
             return null
 
+        # if change TO Hexadecimal
         elif to_choice == "Hexadecimal":
             print(to_hexa(num))
             return null
@@ -65,6 +64,7 @@ def main_convert(from_choice, to_choice, num):
             print(to_hexa(decimal_number))
             return null
 
+    # if change FROM Hexadecimal
     elif from_choice == "Hexadecimal":
 
         # verify that the number entered is hexadecimal
@@ -85,14 +85,17 @@ def main_convert(from_choice, to_choice, num):
             print("Not a valid format")
             return null
 
+        # if change TO Hexadecimal
         if to_choice == "Hexadecimal":
             print(num)
             return null
 
+        # if change TO Decimal
         elif to_choice == "Decimal":
             print(decimal_number)
             return null
 
+        # if change TO Binary
         elif to_choice == "Binary":
             print(to_binary(decimal_number))
             return null
@@ -125,7 +128,6 @@ def to_decimal(from_choice, num):
                 collect_fraction += int(i) * 2**power_fraction
                 power_fraction -= 1
 
-        # made in college to edit
         power_whole = 0
         i = -1
         for j in range(0, len(whole)):

@@ -1,5 +1,5 @@
 class NotCorrectInputTypeError(Exception):
-    """Raised when the type of number entered is no the expected type"""
+    """Raised when the type of number entered is not the expected type"""
     pass
 
 
