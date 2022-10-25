@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
 
 public class App extends Frame{
 
+
     private TextField enter = new TextField();
     private TextField result = new TextField();
     private Choice fromChoice = new Choice();
@@ -16,9 +17,13 @@ public class App extends Frame{
     private Button convert = new Button("Convert");
     public App(){
         setLayout(new GridLayout(0, 5, 0, 10));
-        setSize(480, 180);
+        setSize(550, 200);
         setTitle("Binary Decimal Hexadecimal convertor");
-        //setIconImage();
+
+        //Image img = loadImage("applg.png");
+        //setIconImage("applg.png");
+        setIconImage(Toolkit.getDefaultToolkit().getImage("applg.png"));
+        setResizable(false);
 
         Label from = new Label("From");
         add(from);

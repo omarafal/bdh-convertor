@@ -10,7 +10,8 @@ def main_convert(from_choice, to_choice, num):
 
         # verify that the number is decimal
         if not verify_decimal(num):
-            print("This number is not " + from_choice)
+            #print("This number is not " + from_choice)
+            print("Unknown value")
             return null
 
         # if change TO Decimal
@@ -33,7 +34,8 @@ def main_convert(from_choice, to_choice, num):
 
         # verify that the number entered is binary
         if not verify_binary(num):
-            print("This number is not " + from_choice)
+            #print("This number is not " + from_choice)
+            print("Unknown value")
             return null
 
         # turn the number entered into decimal to make it easier to work with
@@ -42,11 +44,13 @@ def main_convert(from_choice, to_choice, num):
             decimal_number = to_decimal(from_choice, number)
 
         except NotCorrectInputTypeError:
-            print("This number is not " + from_choice)
+            #print("This number is not " + from_choice)
+            print("Unknown value")
             return null
 
         except ValueError:
-            print("This number is not " + from_choice)
+            #print("This number is not " + from_choice)
+            print("Unknown value")
             return null
 
         # if change TO Binary
@@ -69,7 +73,8 @@ def main_convert(from_choice, to_choice, num):
 
         # verify that the number entered is hexadecimal
         if not verify_hexa(num):
-            print("This number is not " + from_choice)
+            #print("This number is not " + from_choice)
+            print("Unknown value")
             return null
 
         # turn the number entered into decimal to make it easier to work with
@@ -78,7 +83,8 @@ def main_convert(from_choice, to_choice, num):
             decimal_number = to_decimal(from_choice, number)
 
         except NotCorrectInputTypeError:
-            print("This number is not " + from_choice)
+            #print("This number is not " + from_choice)
+            print("Unknown value")
             return null
 
         except ValueError:
