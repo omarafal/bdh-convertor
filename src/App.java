@@ -9,13 +9,14 @@ import java.io.InputStreamReader;
 
 public class App extends Frame{
 
-
     private TextField enter = new TextField();
     private TextField result = new TextField();
     private Choice fromChoice = new Choice();
     private Choice toChoice = new Choice();
     private Button convert = new Button("Convert");
+
     public App(){
+
         setLayout(new GridLayout(0, 5, 0, 10));
         setSize(550, 200);
         setTitle("Binary Decimal Hexadecimal convertor");
@@ -62,6 +63,7 @@ public class App extends Frame{
         addWindowListener(window);
         setVisible(true);
     }
+
     public static void main(String[] args){
         new App();
     }
